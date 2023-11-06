@@ -24,7 +24,7 @@ node('built-in')
      stage('ContinuousDelivery')
      {
          
-         deploy adapters: [tomcat9(credentialsId: '01c273a5-408a-47dc-ba02-a18cd347bf9e', path: '', url: 'http://172.31.23.5:9090')], contextPath: 'prodapp', war: '**/*.war'
+         deploy adapters: [tomcat9(credentialsId: '01c273a5-408a-47dc-ba02-a18cd347bf9e', path: '', url: 'http://172.31.23.5:9090')], contextPath: 'myprodapp', war: '**/*.war'
      }
      
      
